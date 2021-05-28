@@ -76,7 +76,7 @@ Contact.updateById = (id, contact, result) => {
 };
 
 Contact.remove = (id, result) => {
-  sql.query("DELETE FROM contacts WHERE id = ?", id, (err, res) => {
+  sql.query("DELETE FROM contact WHERE id = ?", id, (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(null, err);
